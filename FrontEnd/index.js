@@ -163,7 +163,7 @@ async function displayQuestions() {
             let optionDiv=document.getElementById(`selected_option${optionSelected}`);
             
             if(optionSelected!=quesData.answer){
-                optionDiv.innerHTML="<span> You Chose</span> <img src='./images/wrong.png'/>";
+                optionDiv.innerHTML=window.innerWidth>600?"<span> You Chose</span> <img src='./images/wrong.png'/>":"<img src='./images/wrong.png'/>";
                 document.getElementById(`option${optionSelected}`).classList.add("wrong_border");
             }
             if(optionSelected==quesData.answer){

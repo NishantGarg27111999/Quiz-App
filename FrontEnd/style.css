@@ -301,6 +301,10 @@ body{
     padding: 7px;
 }
 
+.option_style *{
+    text-wrap: wrap;
+}
+
 @media only screen and (max-width: 600px) {
     #curr_quesNO{
         padding: 5px 6px;
@@ -339,5 +343,13 @@ body{
 
     #container img{
         width: 290px;
+    }
+
+    body{
+        font-size: small;
+    }
+    .option_style{
+        margin: 10px;
+        word-break: break-all;
     }
   }
