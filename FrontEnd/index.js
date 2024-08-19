@@ -36,7 +36,7 @@ function waitNextBtnClick() {
 
 
 function movetoresult(){
-    console.log("resutl");
+    
     document.getElementById("next_page").href="result.html";
 
     
@@ -161,7 +161,7 @@ async function displayQuestions() {
              
             
             let optionDiv=document.getElementById(`selected_option${optionSelected}`);
-            console.log(optionDiv)
+            
             if(optionSelected!=quesData.answer){
                 optionDiv.innerHTML="<span> You Chose</span> <img src='./images/wrong.png'/>";
                 document.getElementById(`option${optionSelected}`).classList.add("wrong_border");
