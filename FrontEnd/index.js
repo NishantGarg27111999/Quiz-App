@@ -54,7 +54,7 @@ function result(){
         
 
         
-        console.log(option1);
+        
         let time_left=30;
         let intervalId=setInterval(()=>{
             time_left--;
@@ -86,13 +86,13 @@ function result(){
         },1000);
 
         option1.addEventListener('click',()=>{
-            console.log("option1");
+            
             resolve(1);
             clearInterval(intervalId);
         },{once:true})
 
         option2.addEventListener('click',()=>{
-            console.log("option2");
+            
             resolve(2);
             clearInterval(intervalId);
         },{once:true})
@@ -154,7 +154,7 @@ async function displayQuestions() {
        
         let optionSelected=await result();
         
-        console.log(optionSelected)
+        
        
         if(optionSelected!=-1){
             
