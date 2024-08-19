@@ -350,6 +350,6 @@ body{
     }
     .option_style{
         margin: 10px;
-        word-break: break-all;
+        overflow: scroll;
     }
   }
