@@ -1,4 +1,4 @@
-    console.log("result page");
+
 
     let correct=document.getElementById("correct");
     let wrong=document.getElementById("wrong");

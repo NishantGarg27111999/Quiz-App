@@ -329,4 +329,15 @@ body{
         font-size: 14px;
         text-align: center;
     }
+
+    #quiz_container{
+        /* background-color: blueviolet; */
+        width: 85%;
+        
+        
+    }
+
+    #container img{
+        width: 290px;
+    }
   }
