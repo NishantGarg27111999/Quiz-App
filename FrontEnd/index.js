@@ -115,7 +115,7 @@ function result(){
 
 async function displayQuestions() {
 
-    let total_questions=await fetch('http://localhost:3000/total_questions').then((response)=>{
+    let total_questions=await fetch('https://quiz-app-t0ba.onrender.com/total_questions').then((response)=>{
         return response.text();
     }).then((data)=>{
         return data;
@@ -130,7 +130,7 @@ async function displayQuestions() {
 
         curr_quesNO.textContent=`${i+1}/${total_questions}`;
 
-        let res=await fetch(`http://localhost:3000/question/${i}`);
+        let res=await fetch(`https://quiz-app-t0ba.onrender.com/question/${i}`);
         let quesData=await res.json();
 
 

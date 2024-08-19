@@ -1,12 +1,14 @@
 const express = require('express');
 const path=require('path');
+const cors = require('cors');
 const app = express();
 
+app.use(cors());
 
 
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static(path.join(__dirname, 'FrontEnd')));
+app.use(express.static(path.join(__dirname, '../FrontEnd')));
 let questions = [
     {
         question: "What will the following code output?\njavascript\nlet x = 10;\n(function() {\n  console.log(x);\n  let x = 20;\n})();\n",
