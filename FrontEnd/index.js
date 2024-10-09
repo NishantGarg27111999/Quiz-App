@@ -135,19 +135,19 @@ async function displayQuestions() {
 
 
         ques.innerHTML=quesData.question;
-        option1_content.textContent=quesData.options[0];
+        option1_content.textContent='a) '+quesData.options[0];
         option1_content.nextElementSibling.textContent="";
         option1.classList.remove("wrong_border","correct_border");
 
-        option2_content.textContent=quesData.options[1];
+        option2_content.textContent='b) '+quesData.options[1];
         option2_content.nextElementSibling.textContent="";
         option2.classList.remove("wrong_border","correct_border");
 
-        option3_content.textContent=quesData.options[2];
+        option3_content.textContent='c) '+quesData.options[2];
         option3_content.nextElementSibling.textContent="";
         option3.classList.remove("wrong_border","correct_border");
 
-        option4_content.textContent=quesData.options[3];
+        option4_content.textContent='d) '+quesData.options[3];
         option4_content.nextElementSibling.textContent="";
         option4.classList.remove("wrong_border","correct_border");
         
